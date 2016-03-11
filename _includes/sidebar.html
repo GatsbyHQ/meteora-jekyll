@@ -1,0 +1,16 @@
+<div class="col-md-4 blog-sidebar">
+	<div class="meteora-sidebar-widget well">
+		<h4>{{ site.title }}</h4>
+		<p>{{ site.description }}</p>
+	</div>
+ 
+	<div class="meteora-sidebar-widget post-title list-group">
+	{% for post in site.posts limit: 6 %}
+		<a href="{{ post.url }}" class="list-group-item">{{ post.title }} <span class="badge pull-right"><time>{{ post.date | date: "%B %d, %Y" }}</time></span></a>
+    {% endfor %}
+	</div>
+					
+	<div class="meteora-sidebar-widget links">
+	<a href="/atom.xml" class="btn btn-primary btn-lg btn-block"><i class="fa fa-rss"></i> RSS Feed</a>
+	</div>	
+</div>

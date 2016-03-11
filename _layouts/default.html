@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body>
+	
+	{% include navbar.html %}
+	
+	<div class="meteora">
+		<div class="container">
+			<div class="row">
+				<div class="blog-content col-md-8">
+					{{ content }}
+				</div>
+				
+				{% include sidebar.html %}
+
+			</div>
+		</div>
+	</div>
+	
+	{% include footer.html %}
+	
+	<!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/g/jquery@2.2.1,bootstrap@3.3.6"></script>
+	
+</body>
+</html>
